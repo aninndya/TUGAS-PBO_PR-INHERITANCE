@@ -1,7 +1,3 @@
-﻿using System.Runtime;
-using System.Runtime.CompilerServices;
-
-
 
 //class VGA
 class Vga
@@ -39,6 +35,8 @@ class Processor
         this.merk = merk;
     }
 }
+
+//////
 class Intel : Processor
 {
     public Intel(string merk) : base(merk)
@@ -69,6 +67,7 @@ class CoreI7 : Intel
     }
 }
 
+/////
 class PAMD : Processor
 {
     public PAMD(string merk): base(merk)
@@ -91,7 +90,7 @@ class Athlon : PAMD
     }
 }
 
-
+//LAPTOP
 class Laptop
 {
     public string Merk;
@@ -119,7 +118,7 @@ class Laptop
 }
 
 
-
+///////
 class ASUS : Laptop
 {
     public ASUS(string merk, string tipe, Vga vga, Processor processor) : base("ASUS", tipe, vga, processor)
@@ -146,6 +145,7 @@ class Vivobook : ASUS
     }
 }
 
+/////
 class ACER : Laptop
 {
     public ACER(string merk, string tipe, Vga vga, Processor processor) : base("ACER", tipe, vga, processor)
@@ -172,6 +172,7 @@ class Predator : ACER
 
 }
 
+/////
 class Lenovo : Laptop
 {
     public Lenovo(string merk, string tipe, Vga vga, Processor processor) : base("Lenovo", tipe, vga, processor)
@@ -193,6 +194,7 @@ class Legion : Lenovo
     }
 
 }
+
 
 
 namespace TugasPBOPR1
